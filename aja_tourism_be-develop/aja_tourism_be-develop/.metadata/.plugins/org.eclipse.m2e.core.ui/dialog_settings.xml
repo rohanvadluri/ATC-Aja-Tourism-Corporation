@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="MavenProjectImportWizardPage">
+		<list key="rootDirectory">
+<<<<<<< HEAD
+			<item value="C:\Users\ajitm\OneDrive\Desktop\New folder\aja_tourism_be"/>
+=======
+			<item value="C:\Users\devas\OneDrive\Documents\GitHub\aja_tourism_be"/>
+>>>>>>> 9ad41116f0ed813d8e586ff28e44287c5b36cd6f
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+</section>
