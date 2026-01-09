@@ -1,0 +1,136 @@
+/* ================= NAVBAR BASE ================= */
+
+.nav-navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 6px 24px;
+  background: #ffffff;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+}
+
+/* ================= LEFT LOGO ================= */
+
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.nav-logo {
+  height: 40px;
+  width: auto;
+}
+
+.nav-logo-text {
+  font-size: 20px;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+/* ================= MENU ================= */
+
+.nav-navbar ul {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Nav links */
+.nav-navbar a {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 15px;
+  color: #334155;
+  padding: 6px 10px;
+  display: flex;
+  align-items: center;
+}
+
+/* Active + hover */
+.nav-navbar a.active,
+.nav-navbar a:hover {
+  color: #0a66c2;
+  background: #f1f5f9;
+  border-radius: 6px;
+}
+
+/* ================= LOGIN BUTTON ================= */
+
+.nav-login-btn {
+  background: transparent;
+  border: none;
+  margin: 0;
+  padding: 6px 10px;
+  font: inherit;
+  font-size: 15px;
+  font-weight: 500;
+  color: #334155;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.nav-login-btn:hover {
+  color: #0a66c2;
+  background: #f1f5f9;
+  border-radius: 6px;
+}
+
+/* ================= DROPDOWN ================= */
+
+.nav-login-dropdown {
+  position: relative;
+}
+
+/* Dropdown container */
+.nav-login-dropdown>.nav-dropdown-menu {
+  position: absolute;
+  top: 110%;
+  right: 0;
+  background: #ffffff;
+  min-width: 160px;
+  gap: 0 !important;
+  /* 🔴 REMOVE ALL GAPS */
+  padding: 0;
+  margin: 0;
+
+  border-radius: 8px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+  z-index: 999;
+
+  display: flex !important;
+  flex-direction: column !important;
+
+  overflow: hidden;
+  /* 🔴 IMPORTANT */
+}
+
+/* Dropdown rows */
+.nav-login-dropdown>.nav-dropdown-menu>li {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+/* Dropdown links */
+.nav-login-dropdown>.nav-dropdown-menu>li>a {
+  display: block;
+  width: 100%;
+  padding: 12px 16px;
+  font-size: 14px;
+  color: #000000;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+/* Hover */
+.nav-login-dropdown>.nav-dropdown-menu>li>a:hover {
+  background: #e4e3ee;
+  color: #0510a5;
+}

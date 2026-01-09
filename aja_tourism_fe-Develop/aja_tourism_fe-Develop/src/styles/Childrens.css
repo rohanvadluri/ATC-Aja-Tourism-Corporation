@@ -1,0 +1,206 @@
+.childrens-page {
+    background-color: #222020;
+    color: white;
+    min-height: 100vh;
+}
+
+.childrens-page .package-container22,
+.childrens-page .package-container22 * {
+    color: white;
+}
+
+.price-breakup22 p {
+    margin: 4px 0;
+    font-size: 14px;
+    color: white !important;
+}
+
+.package-container22 {
+    max-width: 1320px;
+    margin: auto;
+    padding: 20px;
+}
+
+.title22 {
+    font-size: 32px;
+}
+
+.badge22 {
+    background: green;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-size: 14px;
+}
+
+.hero-img22 {
+    width: 100%;
+    height: 685px;
+    border-radius: 10px;
+    margin: 15px auto;
+    /* centers the image */
+    border: 5px solid #ddd;
+    display: block;
+    /* necessary for auto margin to work */
+    object-fit: cover;
+    /* keeps image shape properly */
+}
+
+.price-box22 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.price22 {
+    font-size: 30px;
+    /* Price Starting From */
+    font-weight: 500;
+}
+
+.price-breakup22 p {
+    font-size: 30px;
+    /* Price Starting From */
+    font-weight: 500;
+    margin: 8px 0;
+}
+
+.price-breakup22 strong {
+    font-size: 20px;
+    /* price size */
+    font-weight: bold;
+    color: white;
+}
+
+.icons22 {
+    font-size: 36px;
+    /* increase emoji size */
+    margin-top: 10px;
+}
+
+.price22 .new22 {
+    color: green;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.price22 .old22 {
+    text-decoration: line-through;
+    margin-left: 10px;
+    font-size: 18px;
+}
+
+.book-btn22 {
+    background: #ff5a4f;
+    color: white;
+    padding: 15px 25px;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 28px;
+    font-weight: 550;
+}
+
+.day-card22 {
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 15px;
+    border: 4px solid #f0f0f0;
+}
+
+.day22 {
+    background: #f08405 !important;
+    color: white;
+    padding: 4px 12px;
+    border-radius: 50%;
+}
+
+.day-card22 img {
+    width: 250px !important;
+    /* reduce image width */
+    height: 150px !important;
+    /* fixed height */
+    object-fit: cover;
+    /* crop nicely */
+    border-radius: 10px;
+}
+
+.price-breakup22 {
+    margin-top: 8px;
+}
+
+.price-breakup22 p {
+    margin: 4px 0;
+    font-size: 14px;
+    color: #444;
+}
+
+.itinerary-grid22 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* 2 cards side by side */
+    gap: 20px;
+}
+
+/* Card layout */
+.day-card22 {
+    display: flex;
+    gap: 15px;
+    align-items: flex-start;
+}
+
+/* Responsive (mobile) */
+@media (max-width: 768px) {
+    .itinerary-grid22 {
+        grid-template-columns: 1fr;
+        /* 1 card per row */
+    }
+}
+
+
+.icons22 {
+    display: flex;
+    gap: 15px;
+    margin-top: 12px;
+}
+
+/* Each emoji */
+.icons22 span {
+    font-size: 28px;
+    width: 55px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: #f2f2f2;
+    cursor: pointer;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+/* Individual colors */
+.icons22 span:nth-child(1) {
+    background: #e8f5e9;
+}
+
+/* bed */
+.icons22 span:nth-child(2) {
+    background: #fff3e0;
+}
+
+/* food */
+.icons22 span:nth-child(3) {
+    background: #e3f2fd;
+}
+
+/* car */
+.icons22 span:nth-child(4) {
+    background: #f3e5f5;
+}
+
+/* scope */
+/* Hover animation */
+.icons22 span:hover {
+    transform: scale(1.2) rotate(5deg);
+}

@@ -1,0 +1,267 @@
+:root {
+  --primary: #0a66c2;
+  --accent: #ff9800;
+  --bg-light: #ffffff;
+  --bg-dark: #ffffff;
+  --text-main: #0f172a;
+  --text-muted: #475569;
+  --white: #ffffff;
+  --radius: 14px;
+  --shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", system-ui, sans-serif;
+  background: #ffffff;
+  color: var(--text-main);
+  line-height: 1.6;
+}
+
+/* ================= HERO ================= */
+
+.home-hero {
+  height: 40vh;
+  position: relative;
+  background: #ffffff;
+  color: black;
+}
+
+.home-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.home-hero-content {
+  max-width: 800px;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.home-hero-content h1 {
+  font-size: clamp(2.4rem, 5vw, 3.6rem);
+  font-weight: 700;
+}
+
+.home-hero-content h3 {
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+.home-hero-content p {
+  font-size: 1.05rem;
+  color: var(--text-muted);
+  margin-bottom: 30px;
+}
+
+.home-hero-btn {
+  padding: 14px 36px;
+  background: var(--accent);
+  color: #000;
+  border: none;
+  border-radius: 999px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.home-hero-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* ================= SECTIONS ================= */
+
+.home-section {
+  padding: 70px 80px;
+  background: #ffffff;
+  color: var(--text-main);
+}
+
+.home-section.home-dark {
+  background: #ffffff;
+}
+
+.home-section h2 {
+  font-size: 2.1rem;
+  font-weight: 700;
+  margin-bottom: 45px;
+  text-align: center;
+}
+
+/* ================= PACKAGES ================= */
+
+.home-package-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 28px;
+}
+
+.home-package-card {
+  background: var(--white);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.home-package-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.15);
+}
+
+.home-package-card img {
+  width: 100%;
+  height: 190px;
+  object-fit: cover;
+}
+
+.home-package-body {
+  padding: 20px;
+}
+
+.home-package-body p {
+  color: var(--text-muted);
+}
+
+.home-package-body span {
+  font-weight: 700;
+  color: var(--primary);
+}
+
+.home-package-body button {
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  background: var(--primary);
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.home-package-body button:hover {
+  background: hsl(210, 29%, 95%);
+  transform: scale(1.03);
+}
+
+/* ================= SERVICES ================= */
+
+.home-service-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 24px;
+}
+
+.home-service-card {
+  background: #141415;
+  color: white;
+  padding: 36px 20px;
+  border-radius: var(--radius);
+  text-align: center;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.3s ease, background 0.3s ease;
+  box-shadow: black;
+}
+
+.home-service-card:hover {
+  background: #101010;
+  transform: translateY(-5px);
+}
+
+/* ================= DESTINATIONS ================= */
+
+.home-destination-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 24px;
+}
+
+.home-destination-card {
+  border-radius: var(--radius);
+  overflow: hidden;
+  position: relative;
+}
+
+.home-destination-card img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.home-destination-card:hover img {
+  transform: scale(1.08);
+}
+
+.home-destination-name {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 14px;
+  background: rgba(255, 255, 255, 0.95);
+  font-weight: 600;
+}
+
+/* ================= WHY US ================= */
+
+.home-why-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 24px;
+  margin-bottom: 40px;
+}
+
+.home-why-card {
+  background: #0e0f0f;
+  color: white;
+  padding: 34px 20px;
+  border-radius: var(--radius);
+  text-align: center;
+  font-weight: 600;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.home-why-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow);
+}
+
+/* ================= BUTTON ================= */
+
+.home-center {
+  text-align: center;
+}
+
+.home-primary-btn {
+  padding: 14px 36px;
+  background: var(--accent);
+  border-radius: 999px;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.home-primary-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 25px rgba(13, 13, 13, 0.2);
+}
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 768px) {
+  .home-section {
+    padding: 60px 20px;
+  }
+}

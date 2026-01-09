@@ -1,0 +1,166 @@
+/* ===== PAGE BACKGROUND ===== */
+.login-page {
+  min-height: 100vh;
+  display: flex;
+  font-family: "Segoe UI", sans-serif;
+  position: relative;
+  background: url("/public/images/bgimg.png") center/cover no-repeat;
+  align-items: center;
+
+
+}
+
+.login-box h2 {
+  white-space: nowrap;
+  font-size: 28px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* ===== DARK OVERLAY ===== */
+/* .login-page::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 0;
+} */
+
+/* ===== LOGIN CARD ===== */
+.login-box {
+  position: relative;
+  z-index: 1;
+  width: 380px;
+  /* smaller width */
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 12px;
+  padding: 25px 20px;
+  margin-left: 60px;
+  /* box-shadow: 0 20px 40px rgb(247, 245, 205); */
+  animation: slideUp 0.6s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 377px;
+}
+
+
+/* ===== TITLE ===== */
+.login-box h2 {
+  text-align: left;
+  margin-bottom: 20px;
+  color: #1f2937;
+  letter-spacing: 1px;
+}
+
+/* ===== INPUT GROUP ===== */
+.input-group {
+  margin-bottom: 14px;
+}
+
+.input-group label {
+  display: block;
+  font-size: 13px;
+  color: #374151;
+  margin-bottom: 5px;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 9px 10px;
+  border-radius: 8px;
+  border: 1px solid #d1d5db;
+  font-size: 13px;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.input-group input:focus {
+  border-color: #0ea5e9;
+  box-shadow: 0 0 0 2px rgba(14, 165, 233, 0.3);
+}
+
+/* ===== ERROR TEXT ===== */
+.error-text {
+  font-size: 12px;
+  color: #dc2626;
+  text-align: left;
+  margin-bottom: 8px;
+}
+
+/* ===== LOGIN BUTTON ===== */
+.login-btn {
+  width: 100%;
+  padding: 9px;
+  border-radius: 8px;
+  border: none;
+  background: linear-gradient(135deg, #0ea5e9, #22c55e);
+  color: #fff;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.login-btn:hover {
+  transform: scale(1.02);
+  background: linear-gradient(135deg, #0284c7, #16a34a);
+}
+
+/* ===== FORGOT PASSWORD ===== */
+.forgot {
+  display: block;
+  margin-top: 8px;
+  font-size: 12px;
+  text-align: left;
+  color: #0284c7;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.forgot:hover {
+  color: #0369a1;
+  text-decoration: underline;
+}
+
+/* ===== REGISTER TEXT ===== */
+.register-text {
+  margin-top: 14px;
+  text-align: left;
+  font-size: 13px;
+  color: #4b5563;
+}
+
+.register-text a {
+  margin-left: 4px;
+  color: #0ea5e9;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.register-text a:hover {
+  text-decoration: underline;
+}
+
+/* ===== ANIMATION ===== */
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .login-page {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .login-box {
+    margin-left: 0;
+    width: 90%;
+  }
+}

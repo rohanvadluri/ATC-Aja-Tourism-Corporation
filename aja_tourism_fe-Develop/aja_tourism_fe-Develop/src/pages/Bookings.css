@@ -1,0 +1,152 @@
+/* ---------- PAGE BACKGROUND ---------- */
+.booking-page .booking-bg {
+    min-height: 100vh;
+    background: url("https://mindster.com/mindster-blogs/wp-content/uploads/2020/01/2018-11-29-1.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 15px;
+}
+
+/* ---------- CARD CONTAINER ---------- */
+.booking-page .booking-card {
+    width: 360px;
+    max-width: 100%;
+    border-radius: 15px;
+    overflow: hidden;
+    background: #ffffff;
+    position: relative;
+    right: 300px;
+    width: 440px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
+}
+
+/* ---------- CARD HEADER ---------- */
+.booking-page .card-header {
+    text-align: center;
+    font-weight: bold;
+    background: linear-gradient(135deg, #6a82fb, #8e54e9);
+    color: #fff;
+    padding: 14px;
+}
+
+/* ---------- FORM INPUTS ---------- */
+.booking-page .form-control {
+    border-radius: 8px;
+    padding: 10px 14px;
+    font-size: 15px;
+}
+
+.booking-page .form-control:focus {
+    border-color: #6a82fb;
+    box-shadow: 0 0 0 0.15rem rgba(106, 130, 251, 0.25);
+}
+
+/* ---------- TEXT LABELS ---------- */
+.booking-page .label {
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+
+.booking-page .note {
+    font-size: 12px;
+    color: #666;
+    margin: 6px 0 10px;
+}
+
+.booking-page p {
+    font-size: 13px;
+    color: #6c757d;
+    margin-bottom: 6px;
+}
+
+/* ---------- COUNTER (MATCHES IMAGE 1) ---------- */
+.booking-page .counter {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 14px;
+}
+
+.booking-page .counter span {
+    min-width: 30px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.booking-page .counter button {
+    width: 34px;
+    height: 34px;
+    border-radius: 6px;
+    border: none;
+    background: #0d6efd;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.booking-page .counter button:hover {
+    background: #084298;
+}
+
+/* ---------- RADIO & CHECKBOX ---------- */
+.booking-page input[type="radio"],
+.booking-page input[type="checkbox"] {
+    margin-right: 6px;
+    cursor: pointer;
+}
+
+/* ---------- AMOUNT BOX ---------- */
+.booking-page .bg-light {
+    background-color: #f8f9fa !important;
+    border-radius: 8px;
+}
+
+.booking-page .bg-light p {
+    font-size: 15px;
+    margin-bottom: 6px;
+}
+
+.booking-page .bg-light hr {
+    margin: 10px 0;
+}
+
+.booking-page .text-success {
+    font-weight: bold;
+}
+
+/* ---------- PAYMENT BUTTON ---------- */
+.booking-page .btn-success {
+    font-size: 16px;
+    padding: 12px;
+    border-radius: 10px;
+    background-color: #198754;
+    border: none;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.booking-page .btn-success:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* ---------- ERROR STATE ---------- */
+.booking-page .is-invalid {
+    border-color: #dc3545;
+}
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width: 576px) {
+    .booking-page .booking-card {
+        width: 100%;
+    }
+
+    .booking-page .btn-success {
+        font-size: 15px;
+    }
+}

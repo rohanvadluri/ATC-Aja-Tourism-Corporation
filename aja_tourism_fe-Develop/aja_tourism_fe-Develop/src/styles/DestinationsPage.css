@@ -1,0 +1,73 @@
+.destination-container {
+    padding: 20px;
+    background-color: #ffffff;
+}
+
+.destination-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.destination-search {
+    padding: 6px;
+    width: 200px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.destination-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.destination-table th {
+    background-color: #f4f6f8;
+    color: #333;
+}
+
+.destination-table th,
+.destination-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+.destination-img {
+    width: 100px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.add-btn {
+    padding: 6px 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.add-btn:hover {
+    background-color: #0056b3;
+}
+
+/* ✅ ONLY Actions column background */
+.actions-cell {
+    background-color: #eef2f6;
+}
+
+/* Action buttons style */
+.actions-cell button {
+    margin: 0 4px;
+    padding: 5px 8px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.actions-cell button:hover {
+    opacity: 0.85;
+}

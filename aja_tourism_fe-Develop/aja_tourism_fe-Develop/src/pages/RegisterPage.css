@@ -1,0 +1,122 @@
+/* Register.css */
+
+.page {
+  margin: 0;
+  background: url('../assets/hyd3.jpg.jpg') no-repeat center center;
+  background-size: cover;
+
+  min-height: calc(80vh - 120px);
+  /* ✅ reserve space for footer */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 40px 20px 10px;
+  /* ✅ bottom space for footer */
+}
+
+
+.register-page {
+  width: 380px;
+  padding: 15px 20px;
+  border-radius: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  margin-right: 500px;
+  height: auto;
+  /* ✅ auto height */
+
+}
+
+.register-page:hover {
+  background: rgba(251, 252, 209, 0.5);
+
+
+}
+
+h2 {
+  text-align: center;
+  color: #1a1a1a;
+  margin-bottom: 5px;
+  margin-top: 1px;
+}
+
+.tagline {
+  text-align: center;
+  font-size: 14px;
+  color: #948181;
+  margin-bottom: 30px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="confirm password"],
+input[type="tel"],
+input[type="dob"],
+input[type="Aadhar Number"] input[type="Passport Number"] {
+  padding: 6px;
+  border: groove;
+  border-radius: 6px;
+  font-size: 14px;
+
+
+}
+
+label {
+  font-size: 15x;
+  color: #1d1a1be9;
+  font-weight: 700;
+}
+
+.radio-group {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px;
+  accent-color: #3b09ba
+}
+
+button {
+  background-color: #009688;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #0b4552;
+}
+
+.signin {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 14px;
+  color: rgb(241, 243, 244);
+
+}
+
+.signin span {
+  color: #0b0b0a;
+  text-decoration: none;
+  font-size: large;
+  font-weight: 800;
+}
+
+.signin span:hover {
+  text-decoration: none;
+  color: rgba(223, 12, 12, 0.83);
+  font-size: large;
+}
+
+.file-upload {
+  color: rgb(255, 240, 250);
+}
